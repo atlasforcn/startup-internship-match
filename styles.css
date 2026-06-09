@@ -36,7 +36,8 @@ select {
 
 .hero,
 .panel,
-.controls {
+.controls,
+.source-panel {
   background: rgba(255, 255, 251, 0.96);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -247,6 +248,39 @@ input[type="range"] {
   border-radius: 8px;
 }
 
+.source-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 18px;
+}
+
+.source-panel p {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.source-panel h2 {
+  margin: 6px 0;
+  font-size: 22px;
+}
+
+.source-panel span {
+  color: var(--muted);
+}
+
+.source-panel a {
+  flex: 0 0 auto;
+  color: var(--blue);
+  font-weight: 850;
+  text-decoration: none;
+}
+
 .empty {
   color: var(--muted);
   line-height: 1.6;
@@ -265,6 +299,10 @@ input[type="range"] {
   }
 
   .hero {
+    display: grid;
+  }
+
+  .source-panel {
     display: grid;
   }
 }
