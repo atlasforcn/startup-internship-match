@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>實習通原型</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="board">
+      <section class="hero">
+        <div>
+          <p>U-start 114 / 實習通</p>
+          <h1>學生、企業、校方共用的實習媒合工作台</h1>
+        </div>
+        <div class="score">
+          <span>今日媒合率</span>
+          <strong id="matchRate">0%</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="segment" role="tablist" aria-label="檢視模式">
+          <button class="active" type="button" data-mode="student">學生視角</button>
+          <button type="button" data-mode="company">企業視角</button>
+          <button type="button" data-mode="school">校方追蹤</button>
+        </div>
+        <input id="search" type="search" placeholder="搜尋職缺、技能、公司">
+        <select id="fieldFilter">
+          <option value="all">全部領域</option>
+          <option value="product">產品</option>
+          <option value="data">資料</option>
+          <option value="marketing">行銷</option>
+        </select>
+      </section>
+
+      <section class="layout">
+        <div class="panel profile">
+          <p>學生履歷</p>
+          <h2>林予安 / 大三</h2>
+          <div class="chips">
+            <span>Figma</span>
+            <span>SQL</span>
+            <span>使用者訪談</span>
+            <span>簡報</span>
+          </div>
+          <label>
+            每週可實習時數
+            <input id="hours" type="range" min="8" max="32" value="20">
+          </label>
+          <strong id="hoursValue">20 小時</strong>
+        </div>
+
+        <div class="panel jobs">
+          <div class="panel-head">
+            <div>
+              <p>職缺推薦</p>
+              <h2>媒合清單</h2>
+            </div>
+            <span id="jobCount">0 筆</span>
+          </div>
+          <div id="jobList" class="job-list"></div>
+        </div>
+
+        <div class="panel pipeline">
+          <div class="panel-head">
+            <div>
+              <p>申請進度</p>
+              <h2>追蹤看板</h2>
+            </div>
+          </div>
+          <div id="pipeline"></div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
