@@ -1,5 +1,21 @@
 # 實習通原型
 
+## 快速看懂
+
+![startup-internship-match 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-internship-match/
+- 這個原型在做什麼：把實習通做成學生與企業的實習媒合管理平台。
+- 特色定位：特色是聚焦申請流程、媒合分數與面試進度，而不是一般職缺列表。
+- 操作流程：瀏覽實習職缺與技能需求 → 查看學生/企業媒合程度 → 管理投遞、面試與錄取流程
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-internship-match 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 ## 比賽來源
 
 - 競賽：U-start 創新創業計畫
