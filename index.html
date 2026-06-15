@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- repo-snapshot:start -->
+    <section class="repo-snapshot repo-snapshot--dashboard" aria-label="專案辨識預覽：實習通" style="--snap-bg: #eef3fb; --snap-bg-2: #d8e3f4; --snap-ink: #1a2638; --snap-muted: #5c687a; --snap-accent: #2f6fdd; --snap-accent-2: #f2b84b;">
+      <div class="snapshot-copy">
+        <p class="snapshot-kicker">Internship matching board</p>
+        <div class="snapshot-name">實習通</div>
+        <p class="snapshot-tagline">學生能力、企業需求與校方進度放在同一個媒合桌面，快速看懂產品用途。</p>
+        <div class="snapshot-chips" aria-label="核心辨識元素">
+        <span>職缺媒合</span>
+        <span>能力標籤</span>
+        <span>校方追蹤</span>
+        </div>
+      </div>
+      <div class="snapshot-scene" aria-hidden="true">
+        <div class="snapshot-device">
+          <div class="snapshot-device-head">
+            <span>Match board</span>
+            <strong>UI 實習候選排序</strong>
+          </div>
+          <div class="snapshot-visual snapshot-visual--dashboard">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="snapshot-data-row">
+          <span><b>78</b>配對分</span>
+          <span><b>12</b>職缺</span>
+          <span><b>4</b>面試</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- repo-snapshot:end -->
+    <div class="demo-boundary" role="note">
+      <strong>Prototype</strong>
+      <span>靜態互動原型；畫面資料、評分、AI、金流、醫療、法律與安全流程皆為示範，不代表原團隊官方產品或實際服務。</span>
+    </div>
     <main class="board">
       <section class="hero">
         <div>
@@ -73,14 +107,15 @@
         </div>
       </section>
 
-      <section class="source-panel">
-        <div>
+      <details class="source-panel">
+        <summary>比賽來源</summary>
+        <div class="source-panel__body">
           <p>比賽來源</p>
           <h2>U-start 創新創業計畫 / 114 年度第二階段績優團隊</h2>
           <span>作品：實習通。學校：國立政治大學。類別：創新服務。</span>
+          <a href="https://ustart.yda.gov.tw/p/405-1000-2178,c147.php?Lang=zh-tw" target="_blank" rel="noreferrer">官方得獎名單</a>
         </div>
-        <a href="https://ustart.yda.gov.tw/p/405-1000-2178,c147.php?Lang=zh-tw" target="_blank" rel="noreferrer">官方得獎名單</a>
-      </section>
+      </details>
     </main>
     <script src="app.js"></script>
   </body>
